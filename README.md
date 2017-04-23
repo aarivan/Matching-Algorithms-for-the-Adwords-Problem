@@ -23,21 +23,29 @@ NOTE: at some points in the algorithms below, two or more advertisers will tie f
 # Greedy:
 1) For each query q
     a) If all neighbors (bidding advertisers for q) have spent their full budgets
+    
         i) continue
+        
     b) Else, match q to the neighbor with the highest bid.
     
 
 # MSVV:
 Let x u be the fraction of advertiser's budget that has been spent and ψ(xu) = 1 − e(xu−1) 
     1) For each query q
+    
         a) If all neighbors have spent their full budgets
+        
             i) continue
+            
         b) Else, match q to the neighbor i that has the largest bi q* ψ(xu) value.
         
 
 # Balance:
 1) For each query q
+
     a) If all neighbors have spent their full budgets
+    
         i) continue
+        
     b) Else, match q to the neighbor with the highest unspent budget.
     
